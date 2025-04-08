@@ -1,0 +1,17 @@
+#nav-primary{
+    justify-content: space-between;
+    
+    &>div{
+        cursor: pointer;
+    }
+}
+#nav-secondary{
+    justify-content: space-between;
+    gap: 2rem;
+    overflow-x: auto; 
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;  
+    border: 1px solid var(--stroke-color);
+    border-inline: none;
+    padding-block: .875rem;
+}
