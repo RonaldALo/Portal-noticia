@@ -46,6 +46,13 @@
 .desktop-only{
     display: none;
 }
+.grid-cols-2{
+    grid-template-columns: none;
+}
+.mobile-only{
+    display: initial;
+}
+
 @media(width >= 80em){
     .container{
         --width:80em; 
@@ -53,9 +60,15 @@
     .desktop-only{
         display: initial;
     }
+    .mobile-only{
+        display: none;
+    }
     .event-columns{
         grid-auto-flow: column;
         grid-auto-columns: 1fr; 
+    }
+    .grid-cols-2{
+        grid-template-columns: 1fr 1fr;
     }
 }
 

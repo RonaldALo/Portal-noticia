@@ -1,0 +1,46 @@
+#highlights{
+  --margin: 1rem;
+  margin-top: var(--margin);
+  
+  & img{
+    height: 100%;
+    object-fit: cover;
+    
+  }
+
+  & .card{
+    border-radius: .25rem;
+    position: relative;
+    overflow: hidden;
+    
+    &::before{
+      position: absolute;
+      content: '';
+      inset: 0;
+      top: 50%;
+      background: linear-gradient(180deg,transparent 0%,#020617 100%);
+    }
+  }
+
+  & figcaption{
+    --px-card: 1rem;
+    padding: var(--px-card);
+    position: absolute;
+    bottom: 0;
+
+    & h2,
+    h1{
+      margin-top: .5rem;
+    }
+  }
+}
+
+@media(width >=80em){
+  #highlights{
+    --margin: 2.5rem;
+
+    & figcaption{
+      --px-card: .75rem;
+    }
+  }
+}
