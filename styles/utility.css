@@ -50,7 +50,7 @@
     grid-template-columns: none;
 }
 .mobile-only{
-    display: initial;
+    display: inline-block;
 }
 
 @media(width >= 80em){
@@ -58,7 +58,7 @@
         --width:80em; 
     }
     .desktop-only{
-        display: initial;
+        display: inline-block;
     }
     .mobile-only{
         display: none;
